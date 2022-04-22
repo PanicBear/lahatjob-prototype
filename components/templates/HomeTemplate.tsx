@@ -1,4 +1,4 @@
-import { Header } from '@components/molecules';
+import { Header, Search } from '@components/molecules';
 import React from 'react';
 
 interface HomeTemplateProps {}
@@ -6,7 +6,8 @@ interface HomeTemplateProps {}
 const HomeTemplate: (props: HomeTemplateProps) => JSX.Element = ({}) => {
   return (
     <>
-      <Header></Header>
+      <Header />
+      <Search />
     </>
   );
 };
