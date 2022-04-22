@@ -1,5 +1,7 @@
 import { css } from 'styled-components';
 
+export * from './color';
+
 export const Layout = {
   flexRowBetween: css`
     display: flex;
@@ -11,7 +13,6 @@ export const Layout = {
     display: flex;
     flex-direction: column;
     justify-content: start;
-    align-items: center;
   `,
   flexColCenter: css`
     display: flex;
@@ -22,10 +23,4 @@ export const Layout = {
   spacePadding: css`
     padding: 1vh 2vw;
   `,
-};
-
-export const Color = {
-  PRIMARY: '#4285F4',
-  GRAY01: 'rgb(203 213 225)',
-  RED01: 'rgb(239 68 68)',
 };
