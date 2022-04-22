@@ -1,11 +1,22 @@
 import '../styles/globals.css';
 import type { AppProps } from 'next/app';
+import styled, { ThemeProvider } from 'styled-components';
+import { Color } from 'styles';
+
+const ComponentStyleWrapper = styled.div`
+  width: 100%;
+  max-width: 36rem;
+  margin: auto;
+  overflow-x: auto;
+`;
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <div className="w-full max-w-xl mx-auto overflow-x-auto">
-      <Component {...pageProps} />
-    </div>
+    <ThemeProvider theme={Color}>
+      <ComponentStyleWrapper>
+        <Component {...pageProps} />
+      </ComponentStyleWrapper>
+    </ThemeProvider>
   );
 }
 

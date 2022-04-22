@@ -18,7 +18,6 @@ interface ButtonProps {
 }
 
 const Button: (props: ButtonProps) => JSX.Element = ({ style = {}, onClick, children = '', ...attrs }) => {
-  console.log(attrs);
   return (
     <ButtonWithStyle style={style} onClick={onClick}>
       {children}
