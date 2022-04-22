@@ -15,7 +15,6 @@ const ListFilterButton = styled.button<{ selected: boolean }>`
   flex: 1;
   width: 48px;
   height: 24px;
-  margin: 0 4px;
   font-size: 12px;
   background-color: ${({ selected }) => (selected ? Color.GRAY01 : 'transparent')};
   border-radius: 4px;
@@ -23,7 +22,7 @@ const ListFilterButton = styled.button<{ selected: boolean }>`
 
 const ListSortSelect = styled.select`
   width: 112px;
-  height: 32px;
+  height: 24px;
   padding: 0 8px;
   font-size: 12px;
   border-radius: 4px;

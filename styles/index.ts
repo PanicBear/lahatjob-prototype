@@ -13,7 +13,6 @@ export const Layout = {
     display: flex;
     flex-direction: column;
     justify-content: start;
-    align-items: center;
   `,
   flexColCenter: css`
     display: flex;

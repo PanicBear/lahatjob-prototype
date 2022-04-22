@@ -1,7 +1,5 @@
-import { Count, Header, Navbar, Search } from '@components/molecules';
-import ListSection from '@components/organisms/ListSection';
-import VisitCountSection from '@components/organisms/VisitCountSection';
-import React from 'react';
+import { Header, Navbar, Search } from '@components/molecules';
+import { ListSection, VisitCountSection } from '@components/organisms';
 
 interface HomeTemplateProps {}
 
