@@ -1,6 +1,7 @@
-export type SVGIconProps = {
+export interface SVGIconProps {
   fill?: string;
-};
+  height?: number;
+}
 
 export { default as BackIcon } from './Back';
 export { default as LoginIcon } from './Login';
