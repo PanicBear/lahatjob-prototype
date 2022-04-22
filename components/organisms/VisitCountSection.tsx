@@ -13,6 +13,7 @@ const CountSection = styled.section`
 
 const ToAllJobs = styled.div`
   ${Layout.flexRowBetween}
+  font-size: 14px;
 `;
 
 interface VisitCountProps {}

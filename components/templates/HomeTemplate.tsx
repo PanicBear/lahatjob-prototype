@@ -1,4 +1,5 @@
 import { Count, Header, Navbar, Search } from '@components/molecules';
+import ListSection from '@components/organisms/ListSection';
 import VisitCountSection from '@components/organisms/VisitCountSection';
 import React from 'react';
 
@@ -11,6 +12,7 @@ const HomeTemplate: (props: HomeTemplateProps) => JSX.Element = ({}) => {
       <Search />
       <Navbar />
       <VisitCountSection />
+      <ListSection />
     </>
   );
 };
