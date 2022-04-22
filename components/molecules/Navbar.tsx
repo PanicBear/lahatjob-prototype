@@ -6,7 +6,8 @@ const NavbarWithStyle = styled.nav`
   ${Layout.flexRowBetween}
   width: 100%;
   height: 48px;
-  padding: 16px;
+  padding: 8px 16px;
+  margin-top: 8px;
 `;
 const NavLinkWithStyle = styled.a`
   height: 24px;

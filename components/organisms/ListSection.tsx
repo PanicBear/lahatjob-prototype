@@ -6,7 +6,7 @@ import { Layout } from 'styles';
 const ListSectionWithStyle = styled.section`
   ${Layout.flexColCenter}
   width: 100%;
-  padding: 8px 16px;
+  padding: 4px 16px;
 `;
 const ListArea = styled.ul`
   list-style: none;

@@ -5,7 +5,8 @@ import { Layout } from 'styles';
 
 const CountSectionWrapper = styled.div`
   ${Layout.flexRowBetween}
-  padding: 16px;
+  padding: 8px 16px;
+  margin-top: 8px;
 `;
 const CountSection = styled.section`
   padding: 4px 8px;
