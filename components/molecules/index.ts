@@ -5,3 +5,4 @@ export { default as Count } from './Count';
 export { default as ListFilterHeader } from './ListFilterHeader';
 export { default as ListTitleHeader } from './ListTitleHeader';
 export { default as JobItem } from './JobItem';
+export { default as Campaign } from './Campaign';
