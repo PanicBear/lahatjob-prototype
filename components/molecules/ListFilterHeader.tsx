@@ -5,6 +5,7 @@ import { Color, Layout } from 'styles';
 const ListFilterArea = styled.div`
   ${Layout.flexRowBetween}
   width: 100%;
+  padding: 0 8px;
 `;
 
 const ListFilterButtonWrapper = styled.div`
@@ -28,9 +29,9 @@ const ListSortSelect = styled.select`
   border-radius: 4px;
 `;
 
-interface ListFilterBarProps {}
+interface ListFilterProps {}
 
-const ListFilterBar: (props: ListFilterBarProps) => JSX.Element = ({}) => {
+const ListFilterHeader: (props: ListFilterProps) => JSX.Element = ({}) => {
   const [selectedFilter, setSelectedFilter] = useState<'all' | 'today' | 'urgent'>('all');
 
   const onAllClick = () => {
@@ -70,4 +71,4 @@ const ListFilterBar: (props: ListFilterBarProps) => JSX.Element = ({}) => {
   );
 };
 
-export default ListFilterBar;
+export default ListFilterHeader;

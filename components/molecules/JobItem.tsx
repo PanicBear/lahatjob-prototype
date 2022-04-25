@@ -4,8 +4,6 @@ import { Layout } from 'styles';
 const ItemWrapper = styled.div`
   ${Layout.flexRowBetween}
   box-sizing: border-box;
-  border: 1px solid black;
-  padding: 4px;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
@@ -13,7 +11,7 @@ const ItemWrapper = styled.div`
 const ItemThumbnail = styled.div`
   min-width: 32px;
   flex: 1;
-  height: 100%;
+  aspect-ratio: 1/1;
   background-color: ${({ theme }) => theme.GRAY01};
 `;
 const ItemTextWrapper = styled.div`
@@ -26,16 +24,16 @@ const ItemJobInfoWrapper = styled.div`
 `;
 
 const ItemTextCorp = styled.span`
-  font-size: 8px;
+  font-size: 6px;
 `;
 const ItemTextTitle = styled.span`
-  font-size: 16px;
+  font-size: 14px;
 `;
 const ItemTextPosition = styled.span`
-  font-size: 12px;
+  font-size: 6px;
 `;
 const ItemTextSalery = styled.span`
-  font-size: 8px;
+  font-size: 6px;
   word-break: keep-all;
 `;
 
