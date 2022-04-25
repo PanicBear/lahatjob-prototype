@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { Layout } from 'styles';
+import { CampaignInfo } from 'types';
 
 const CampaignWrapper = styled.div`
   flex: 1;
@@ -21,14 +22,12 @@ const CampaignDate = styled.p`
   text-align: center;
 `;
 
-interface CampaignProps {}
-
-const Campaign: (props: CampaignProps) => JSX.Element = ({}) => {
+const Campaign: (props: CampaignInfo) => JSX.Element = ({ thumbnailUrl, title, createdAt }) => {
   return (
     <CampaignWrapper>
       <CampaignThumbnail />
-      <CampaignTitle>Watch out!</CampaignTitle>
-      <CampaignDate>25.04.2022</CampaignDate>
+      <CampaignTitle>{title}</CampaignTitle>
+      <CampaignDate>{createdAt}</CampaignDate>
     </CampaignWrapper>
   );
 };

@@ -18,13 +18,13 @@ const ListArea = styled.div`
 `;
 
 interface ListSectionProps {
-  SectionHeader: (props: any) => JSX.Element;
+  children: React.ReactNode;
 }
 
-const ListSection: (props: ListSectionProps) => JSX.Element = ({ SectionHeader }) => {
+const ListSection: (props: ListSectionProps) => JSX.Element = ({ children: Header }) => {
   return (
     <ListSectionWithStyle>
-      <SectionHeader />
+      {Header}
       <ListArea>
         <JobItem />
         <JobItem />

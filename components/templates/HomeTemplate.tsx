@@ -1,8 +1,18 @@
-import { Header, ListFilterHeader, ListTitleHeader, Navbar, Search } from '@components/molecules';
-import { CampaignSection, ListSection, VisitCountSection } from '@components/organisms';
-import LayoutTemplate from './LayoutTemplate';
+import { ListFilterHeader, ListTitleHeader, Navbar, NoticeBar, Search } from '@components/molecules';
+import { CampaignSection, FeedSection, ListSection, VisitCountSection } from '@components/organisms';
+import { CampaignInfo } from 'types';
 
 interface HomeTemplateProps {}
+
+const dummyCampaigns: CampaignInfo[] = [
+  { thumbnailUrl: 'url1', title: 'title1', createdAt: 'date1' },
+  { thumbnailUrl: 'url2', title: 'title2', createdAt: 'date2' },
+];
+
+const dummyEvent: CampaignInfo[] = [
+  { thumbnailUrl: 'url1', title: 'title1', createdAt: 'date1' },
+  { thumbnailUrl: 'url2', title: 'title2', createdAt: 'date2' },
+];
 
 const HomeTemplate: (props: HomeTemplateProps) => JSX.Element = ({}) => {
   return (
@@ -10,9 +20,18 @@ const HomeTemplate: (props: HomeTemplateProps) => JSX.Element = ({}) => {
       <Search />
       <Navbar />
       <VisitCountSection />
-      <ListSection SectionHeader={ListFilterHeader} />
-      <ListSection SectionHeader={ListTitleHeader} />
-      <CampaignSection />
+      <ListSection>
+        <ListFilterHeader />
+      </ListSection>
+      <ListSection>
+        <ListTitleHeader title={'Customized Job'} buttonText={'Edit'} />
+      </ListSection>
+      <CampaignSection campaigns={dummyCampaigns} />
+      <FeedSection>
+        <ListTitleHeader title="Job Talk" buttonText={'See more'} />
+      </FeedSection>
+      <CampaignSection campaigns={dummyEvent} />
+      <NoticeBar />
     </>
   );
 };

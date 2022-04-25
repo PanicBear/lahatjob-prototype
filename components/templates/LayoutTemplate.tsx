@@ -11,7 +11,7 @@ const LayoutWrapper = styled.div`
   ${Layout.flexColCenter}
   width: 100%;
   height: 100%;
-  padding-top: 64px;
+  padding-top: 80px;
 `;
 
 const LayoutTemplate: (props: LayoutProps) => JSX.Element = ({ children }) => {

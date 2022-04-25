@@ -6,8 +6,9 @@ import { Layout, Shadow } from 'styles';
 const HeaderWithStyle = styled.header<HeaderProps>`
   ${Layout.flexRowBetween}
   ${Shadow.middle}
-  padding: 8px 12px;
   width: 100%;
+  max-width: 36rem;
+  padding: 8px 12px;
   height: 64px;
   background-color: white;
 

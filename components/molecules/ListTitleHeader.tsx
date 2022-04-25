@@ -11,17 +11,20 @@ const SectionTitle = styled.span`
   font-size: 16px;
 `;
 
-interface ListTitleProps {}
+interface ListTitleProps {
+  title: string;
+  buttonText: string;
+}
 
-const ListTitleHeader: (props: ListTitleProps) => JSX.Element = ({}) => {
+const ListTitleHeader: (props: ListTitleProps) => JSX.Element = ({ title, buttonText }) => {
   return (
     <TitleArea>
-      <SectionTitle>Customized Job</SectionTitle>
+      <SectionTitle>{title}</SectionTitle>
       <Button
         onClick={() => console.log('edit')}
-        style={{ backgroundColor: `${Color.GRAY01}`, padding: '0px 12px', fontSize: '14px' }}
+        style={{ backgroundColor: `${Color.GRAY01}`, padding: '0px 12px', fontSize: '14px', minWidth: 'fit-content' }}
       >
-        Edit
+        {buttonText}
       </Button>
     </TitleArea>
   );

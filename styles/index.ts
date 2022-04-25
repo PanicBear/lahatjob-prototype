@@ -9,6 +9,12 @@ export const Layout = {
     justify-content: space-between;
     align-items: center;
   `,
+  flexRowStart: css`
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+  `,
   flexColStart: css`
     display: flex;
     flex-direction: column;
