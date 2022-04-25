@@ -10,6 +10,7 @@ interface CampaignSectionProps {
 const CampaignArea = styled.section`
   ${Layout.flexRowBetween}
   width: 100%;
+  margin-top: 16px;
   padding: 8px;
 `;
 

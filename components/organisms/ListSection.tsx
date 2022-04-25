@@ -5,14 +5,14 @@ import { Layout } from 'styles';
 const ListSectionWithStyle = styled.section`
   ${Layout.flexColCenter}
   width: 100%;
-  margin-top: 8px;
+  margin-top: 16px;
   padding: 8px;
 `;
 const ListArea = styled.div`
   width: 100%;
   display: grid;
   gap: 4px;
-  margin-top: 4px;
+  margin-top: 8px;
   padding: 4px 8px;
   grid-template-columns: 50% 50%;
 `;
