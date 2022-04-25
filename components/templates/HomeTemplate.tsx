@@ -1,4 +1,4 @@
-import { Header, Navbar, Search } from '@components/molecules';
+import { Header, ListFilterHeader, ListTitleHeader, Navbar, Search } from '@components/molecules';
 import { ListSection, VisitCountSection } from '@components/organisms';
 
 interface HomeTemplateProps {}
@@ -10,7 +10,8 @@ const HomeTemplate: (props: HomeTemplateProps) => JSX.Element = ({}) => {
       <Search />
       <Navbar />
       <VisitCountSection />
-      <ListSection />
+      <ListSection SectionHeader={ListFilterHeader} />
+      <ListSection SectionHeader={ListTitleHeader} />
     </>
   );
 };

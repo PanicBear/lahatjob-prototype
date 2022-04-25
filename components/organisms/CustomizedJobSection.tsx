@@ -2,12 +2,15 @@ import { JobItem } from '@components/molecules';
 import styled from 'styled-components';
 import { Layout } from 'styles';
 
-const ListSectionWithStyle = styled.section`
+interface CustomizedJobProps {}
+
+const JobListSection = styled.section`
   ${Layout.flexColCenter}
   width: 100%;
   margin-top: 8px;
   padding: 8px;
 `;
+
 const ListArea = styled.div`
   width: 100%;
   display: grid;
@@ -16,22 +19,17 @@ const ListArea = styled.div`
   grid-template-columns: 50% 50%;
 `;
 
-interface ListSectionProps {
-  SectionHeader: (props: any) => JSX.Element;
-}
-
-const ListSection: (props: ListSectionProps) => JSX.Element = ({ SectionHeader }) => {
+const CustomizedJobSection: (props: CustomizedJobProps) => JSX.Element = ({}) => {
   return (
-    <ListSectionWithStyle>
-      <SectionHeader />
+    <JobListSection>
       <ListArea>
         <JobItem />
         <JobItem />
         <JobItem />
         <JobItem />
       </ListArea>
-    </ListSectionWithStyle>
+    </JobListSection>
   );
 };
 
-export default ListSection;
+export default CustomizedJobSection;
