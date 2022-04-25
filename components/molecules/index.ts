@@ -9,3 +9,4 @@ export { default as Campaign } from './Campaign';
 export { default as FeedItem } from './FeedItem';
 export { default as NoticeBar } from './NoticeBar';
 export { default as CustomerCenter } from './CustomerCenter';
+export { default as Footer } from './Footer';

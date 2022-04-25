@@ -1,4 +1,12 @@
-import { CustomerCenter, ListFilterHeader, ListTitleHeader, Navbar, NoticeBar, Search } from '@components/molecules';
+import {
+  CustomerCenter,
+  Footer,
+  ListFilterHeader,
+  ListTitleHeader,
+  Navbar,
+  NoticeBar,
+  Search,
+} from '@components/molecules';
 import { CampaignSection, FeedSection, ListSection, VisitCountSection } from '@components/organisms';
 import { CampaignInfo } from 'types';
 
@@ -33,6 +41,7 @@ const HomeTemplate: (props: HomeTemplateProps) => JSX.Element = ({}) => {
       <CampaignSection campaigns={dummyEvent} />
       <NoticeBar />
       <CustomerCenter />
+      <Footer />
     </>
   );
 };
