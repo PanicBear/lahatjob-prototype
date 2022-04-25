@@ -11,7 +11,8 @@ const ListSectionWithStyle = styled.section`
 const ListArea = styled.div`
   width: 100%;
   display: grid;
-  margin-top: 8px;
+  gap: 4px;
+  margin-top: 4px;
   padding: 4px 8px;
   grid-template-columns: 50% 50%;
 `;
@@ -25,6 +26,10 @@ const ListSection: (props: ListSectionProps) => JSX.Element = ({ SectionHeader }
     <ListSectionWithStyle>
       <SectionHeader />
       <ListArea>
+        <JobItem />
+        <JobItem />
+        <JobItem />
+        <JobItem />
         <JobItem />
         <JobItem />
         <JobItem />
